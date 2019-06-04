@@ -34,9 +34,10 @@ public class Main { public static void main (String [] args){
 
   serie1.setTemporadas(temporadasSerie);
   Usuario marcos = new Usuario();
+  marcos.miraEsteContenido(elBebeDeRosemary);
 
-  serie1.cuantoDura();
-  marcos.visteCompleto(elBebeDeRosemary);
+  System.out.println(serie1.cuantoDura());
+    System.out.println(marcos.visteCompleto(elBebeDeRosemary));
 
 }
 }

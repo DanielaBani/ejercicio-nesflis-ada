@@ -6,13 +6,8 @@ public class Temporada implements ContenidoUnitario {
     private String genero;
     private Serie serieALaQuePertenece;
 
-    public List<String> getActoresInvitados (){
-        return this.capitulos.stream().map(capitulo-> capitulo.getActoresInvitados());}
 
-        //un metodo que le pregunta a cada uno de los capitulos cuales son sus actores invitados
-    //seria una colección de colecciones
-
-    public Boolean actuoEnEsteContenido(String actor){ return this.getActoresInvitados().contains(actor);}
+    public Boolean actuoEnEsteContenido(String actor){ return this.capitulos.stream().anyMatch(c-> c.actuoEnEsteContenido(actor));}
 
     public String getGenero () {return serieALaQuePertenece.getGenero();}
 

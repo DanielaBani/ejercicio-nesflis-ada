@@ -6,7 +6,7 @@ public class Capitulo implements ContenidoUnitario {
     private Serie serieALaQuePertenece;
     private List<String> actoresInvitados;
 
-    public Boolean actuoEnEsteContenido(String actor) {return this.actoresInvitados.allMatch(a->actor.contains(actor));}
+    public Boolean actuoEnEsteContenido(String actor) {return this.actoresInvitados.contains(actor);}
     //un metodo que nos diga si el actor que paso por parametro esta en la bolsa de actores invitados
 
     public Capitulo (Integer duracionEnMinutos, Serie serie){
@@ -22,7 +22,4 @@ public class Capitulo implements ContenidoUnitario {
 
     public List<String> getActoresInvitados() { return actoresInvitados; }
 
-    public void setActoresInvitados(List<String> actoresInvitados) {this.actoresInvitados = actoresInvitados;}
-
-
-}
+    public void setActoresInvitados(List<String> actoresInvitados) {this.actoresInvitados = actoresInvitados;}}

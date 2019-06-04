@@ -24,7 +24,7 @@ public class Serie implements ContenidoUnitario {
     public String getGenero() {return genero;}
 
     public Boolean actuoEnEsteContenido (String actor){ return
-            this.actoresPrincipales.contains(actor)|& //nos falta encontrar como escribir que cumpla una condicion O la otra
-            this.temporadas.stream().map(t->t.actuoEnEsteContenido(actor));}
+            this.actoresPrincipales.contains(actor)|| //nos falta encontrar como escribir que cumpla una condicion O la otra
+            this.temporadas.stream().anyMatch(t->t.actuoEnEsteContenido(actor));}
 
 }
