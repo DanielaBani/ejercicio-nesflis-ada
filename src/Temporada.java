@@ -1,8 +1,9 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Temporada implements ContenidoUnitario {
-    private List<Capitulo> capitulos;
+    private List<Capitulo> capitulos= new ArrayList<>();
     private String genero;
     private Serie serieALaQuePertenece;
 

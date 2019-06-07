@@ -1,10 +1,12 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Capitulo implements ContenidoUnitario {
 
     private Integer duracionEnMinutos;
     private Serie serieALaQuePertenece;
-    private List<String> actoresInvitados;
+    private List<String> actoresInvitados= new ArrayList<>();
+    private String titulo;
 
     public Boolean actuoEnEsteContenido(String actor) {return this.actoresInvitados.contains(actor);}
     //un metodo que nos diga si el actor que paso por parametro esta en la bolsa de actores invitados
@@ -22,4 +24,9 @@ public class Capitulo implements ContenidoUnitario {
 
     public List<String> getActoresInvitados() { return actoresInvitados; }
 
-    public void setActoresInvitados(List<String> actoresInvitados) {this.actoresInvitados = actoresInvitados;}}
+    public void setActoresInvitados(List<String> actoresInvitados) {this.actoresInvitados = actoresInvitados;}
+
+    public String getTitulo() { return titulo; }
+
+    public void setTitulo(String titulo) { this.titulo = titulo; }
+}

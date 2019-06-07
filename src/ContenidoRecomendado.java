@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class ContenidoRecomendado {
 
-    private List<ContenidoUnitario> contenidosDestacados;
+    private List<ContenidoUnitario> contenidosDestacados= new ArrayList<>();
     private Usuario usuario;
 
     public List<ContenidoUnitario> contenidosIncompletos(){ return

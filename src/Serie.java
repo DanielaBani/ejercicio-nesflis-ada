@@ -1,10 +1,11 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Serie implements ContenidoUnitario {
     private String genero;
     private Integer duracion;
-    private List<Temporada> temporadas;
-    private List<String> actoresPrincipales;
+    private List<Temporada> temporadas = new ArrayList<>();
+    private List<String> actoresPrincipales = new ArrayList<>();
 
     public Serie(String genero, List<String> actoresPrincipales) {
         this.genero = genero;

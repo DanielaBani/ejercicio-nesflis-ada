@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Pelicula implements ContenidoUnitario{
     private String genero;
     private Integer duracionEnMinutos;
-    private List<String> actoresPrincipales;
+    private List<String> actoresPrincipales = new ArrayList<>();
 
     public Pelicula (String genero, Integer duracionEnMinutos,List<String> actoresPrincipales){
         this.genero=genero;
